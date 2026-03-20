@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[]args)
     {
@@ -15,8 +17,7 @@ public class Main {
         System.out.println("double:"+pi);
         System.out.println("char:"+a);
         System.out.println("Boolean:"+isStudent);
-        if (isStudent){
-            
+        if (isStudent){   
             System.out.println("you are student");
         
         }
@@ -24,6 +25,30 @@ public class Main {
             System.out.println("you are not student");
         }
 
-    }
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter your name: ");
+       // String name=scanner.next(); take first word only
+        String name=scanner.nextLine();// take all the words 
+        System.out.print("Enter your age: ");
+        int age=scanner.nextInt(); // for inteher input
+        System.out.print("Enter yor gpa:");
+        double gpa=scanner.nextDouble();
+        System.out.print("Are you student ?(true/false)");
+        isStudent=scanner.nextBoolean();
+        System.out.println("Dear, " +name);
+        System.out.println("You are "+age+" years old");
+        System.out.println("You scored "+gpa+" GPA");
+        System.out.println("Student:"+isStudent);
 
+        if (isStudent){
+            System.out.println("You can enrolled in this course");
+        }
+        else{
+            System.out.println("You can't enrolled in this course");
+        }
+
+        scanner.close();
+
+
+    }
 }
