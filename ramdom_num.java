@@ -21,8 +21,18 @@ public class ramdom_num {
         else{
             System.out.println("It is Tail");
         }
+        System.out.println(Math.E);
+        System.out.println(Math.pow(2, 3));
+        System.out.println(Math.max(12, 20));
+        System.out.println(Math.min(12,20));
+        System.out.println(Math.abs(-5));
+        System.out.println(Math.sqrt(4));
+        System.out.println(Math.ceil(3.11));
+        System.out.println(Math.floor(3.11));
+        System.out.println(Math.round(3.11));
+        System.out.println(Math.round(3.55));
 
-        
+
         
     }
 }
