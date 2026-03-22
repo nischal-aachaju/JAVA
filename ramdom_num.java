@@ -31,7 +31,14 @@ public class ramdom_num {
         System.out.println(Math.floor(3.11));
         System.out.println(Math.round(3.11));
         System.out.println(Math.round(3.55));
-
+        
+        String name="SpongeBob"; //%s
+        char firstLetter='S'; //%c
+        int age=20; //%d
+        double height=4.5; //%f output=4.500000 and %.1f output=4.5
+        boolean isEmployee=true; //%b
+        //%[flags][width][.precision][specifier-character]
+        System.out.printf("Hello %s, your first letter is %c and you are %d. Height is %.2f and Employee: %b",name,firstLetter,age,height,isEmployee);
 
         
     }
